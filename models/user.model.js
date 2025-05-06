@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true,
         trim:true,
-        minlength:[3, 'username must be at least 3 char log']
+        minlength:[3, 'password must be at least 3 char log']
 
     },
     email:{
@@ -22,7 +22,7 @@ const userSchema = new mongoose.Schema({
         trim:true,
         lowercase:true,
         unique:true,
-        minlength:[13, 'username must be at least 3 char log']
+        minlength:[13, 'email must be at least 3 char log']
 
     }
 })
